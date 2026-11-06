@@ -13,13 +13,13 @@
     "webview",
     "automation"
   ],
-  "homepage": "https://github.com/REPLACE-ME/dsh-plugin-browser-control#readme",
+  "homepage": "https://github.com/Kuku-Ddddd/dsh-plugin-browser-control#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/REPLACE-ME/dsh-plugin-browser-control.git"
+    "url": "git+https://github.com/Kuku-Ddddd/dsh-plugin-browser-control.git"
   },
   "bugs": {
-    "url": "https://github.com/REPLACE-ME/dsh-plugin-browser-control/issues"
+    "url": "https://github.com/Kuku-Ddddd/dsh-plugin-browser-control/issues"
   },
   "main": "index.js",
   "exports": {
