@@ -1,0 +1,3 @@
+- insert:
+    - id: browser-control
+      name: dsh-plugin-browser-control
