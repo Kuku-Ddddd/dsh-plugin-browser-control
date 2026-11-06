@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "内置浏览器控制",
+    "description": "让 agent 操作右侧 Sidebar 的内置浏览器标签页：导航、读取正文、截图、页内执行 JS。"
+  }
+}
