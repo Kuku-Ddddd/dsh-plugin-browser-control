@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Built-in Browser Control",
+    "description": "Lets the agent drive the built-in browser tab in the right Sidebar: navigate, read page text, take screenshots, and run in-page JS."
+  }
+}
