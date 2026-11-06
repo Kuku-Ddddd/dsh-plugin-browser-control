@@ -1,0 +1,58 @@
+{
+  "name": "dsh-plugin-browser-control",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "displayName": "DSH Browser Control",
+  "description": "Let a DSH agent drive the app's own built-in browser tab (right Sidebar): navigate, read, click, fill, hover, press, screenshot, evaluate. Controls the built-in webview instead of spawning a separate headless Chromium.",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "browser",
+    "webview",
+    "automation"
+  ],
+  "homepage": "https://github.com/Kuku-Ddddd/dsh-plugin-browser-control#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kuku-Ddddd/dsh-plugin-browser-control.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kuku-Ddddd/dsh-plugin-browser-control/issues"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "define-tool.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.5"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-sidebar-right"]
+    }
+  }
+}
